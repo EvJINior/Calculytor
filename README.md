@@ -1,2 +1,3 @@
 # My-Projects
-- Calcula
+- Calculator based on alert, prompt.
+- Pyramids in console website.
