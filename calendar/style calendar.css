@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+table>tr:nth-child(2) {   
+    border: none;
+    background-color: rgb(215, 212, 219);         
+    color: rgb(109, 65, 196);    
+}
+
+tr:nth-child(3) {            
+    background-color: rgba(67, 68, 143, 0.597);
+    color:rgba(115, 224, 170, 0.881);
+    text-transform: lowercase;
+    font-weight: 550;
+}
+
+tr:nth-child(2)>td {            
+    border: none;
+   padding: 0px;    
+}
+
+.cellpadding {
+    padding: 20px;
+}
+
+tr {            
+    text-align: center;
+}
+
+caption {
+    font-size: 20px;
+    text-align: center;
+}
+
+div {
+    display: flex;     
+    flex-wrap: wrap;  
+    gap: 10px;                  
+}
+
+.days_Last_Mounth {      
+    color:rgba(168, 82, 2, 0.344)
+}
+    
+.days_this_Mounth {
+    color:rgb(17, 62, 70)
+}
