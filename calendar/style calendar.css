@@ -4,20 +4,20 @@
 
 table>tr:nth-child(2) {   
     border: none;
-    background-color: rgb(215, 212, 219);         
-    color: rgb(109, 65, 196);    
+    background-color: #a9eae2;         
+    color: rgb(236, 122, 0);    
 }
 
-tr:nth-child(3) {            
-    background-color: rgba(67, 68, 143, 0.597);
-    color:rgba(115, 224, 170, 0.881);
+tr:nth-child(3) {
+    background-color: rgba(167, 77, 7, 0.597);
+    color: rgba(115, 224, 170, 0.881);
     text-transform: lowercase;
     font-weight: 550;
 }
 
-tr:nth-child(2)>td {            
+tr:nth-child(2)>td {
     border: none;
-   padding: 0px;    
+    padding: 0px;
 }
 
 .cellpadding {
@@ -33,16 +33,111 @@ caption {
     text-align: center;
 }
 
-div {
-    display: flex;     
-    flex-wrap: wrap;  
-    gap: 10px;                  
-}
-
 .days_Last_Mounth {      
-    color:rgba(168, 82, 2, 0.344)
+    color:rgba(206, 103, 7, 0.344);
 }
     
 .days_this_Mounth {
-    color:rgb(17, 62, 70)
+    color:rgb(9, 53, 60);
 }
+
+.days_Next_Mounth {
+    color:rgba(168, 82, 2, 0.344);
+}
+
+.today {
+    background-color: #a9eae2;
+    color:rgb(202, 146, 15);
+}
+
+
+body {
+    margin: 50px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+    background-color: rgb(240, 206, 168);
+}
+
+.create_Window {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column; 
+    
+    /* display: flex;
+    flex-direction: column; 
+    border: 1px red solid;
+    max-width: 50px;
+    gap: 0px;   */
+}
+
+.create_Window div {    
+    box-sizing: border-box;
+    width: 15em;
+    height: 3em;
+    font-size: 20px;
+    border-radius: 0.5em;
+    margin: 0.5em;    
+    color: white;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    line-height: 3em;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.create_Window div:nth-child(odd) {
+    background: linear-gradient(90deg, rgba(214,61,20,1) 8%, rgba(230,151,66,1) 78%);
+    text-align: left;
+    padding-left: 20%;
+    transform: perspective(500px) rotateY(45deg);
+}   
+
+.create_Window div:nth-child(even) {
+    background: linear-gradient(90deg, rgba(214,61,20,1) 8%, rgba(230,151,66,1) 78%);
+    text-align: right;
+    padding-right: 20%;
+    transform: perspective(500px) rotateY(-45deg);
+}
+
+.create_Window div:nth-child(odd):hover {
+    background: linear-gradient(90deg, rgba(20,80,214,1) 5%, 
+    rgba(180,107,25,1) 22%, rgba(204,114,11,1) 50%, rgba(226,97,7,1) 78%, rgba(66,155,230,1) 95%);
+    color: rgb(65, 8, 134);        
+    transform: perspective(200px) rotateY(45deg);
+    padding-left: 5%;
+}
+
+.create_Window div:nth-child(even):hover { 
+    background: linear-gradient(90deg, rgba(20,80,214,1) 5%, 
+    rgba(180,107,25,1) 22%, rgba(204,114,11,1) 50%, rgba(226,97,7,1) 78%, rgba(66,155,230,1) 95%);
+    color: rgb(65, 8, 134);       
+    transform: perspective(200px) rotateY(-45deg);
+    padding-right: 5%;
+}
+
+.button_Choose_Year {
+    box-sizing: border-box;
+    width: 15em;
+    height: 3em;
+    font-size: 20px;
+    border-radius: 0.5em;
+    margin: 0.5em;    
+    color: rgb(109, 64, 29);
+    font-family: sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 3em;
+    transition: 0.3s;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(214,61,20,1) 8%, rgba(230,151,66,1) 78%);
+}
+
+.button_Choose_Year:hover {
+    background: linear-gradient(90deg, rgba(20,80,214,1) 5%, 
+    rgba(180,107,25,1) 22%, rgba(204,114,11,1) 50%, rgba(226,97,7,1) 78%, rgba(66,155,230,1) 95%);
+    color: rgb(65, 8, 134);
+}
+
